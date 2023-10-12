@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Send an email using EmailJS
     emailjs
       .send("service_56x4i3o", emailTemplateId, {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
+        name: formData.get("name"),
+        email: formData.get("email"),
+        message: formData.get("message"),
       })
       .then(
         function (response) {
