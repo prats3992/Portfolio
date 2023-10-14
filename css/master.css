@@ -22,6 +22,36 @@ header {
   text-align: center;
 }
 
+header h1 {
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+}
+
+header h1::before {
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  width: 30%;
+  border-bottom: 2px solid transparent;
+  bottom: 0;
+  left: 35%;
+  background: var(
+    --light-gradient
+  ); /* Create a gradient background for the underline */
+  background-size: 100% 2px; /* Adjust the background size for the gradient */
+  background-position: 100% 100%; /* Adjust the initial position for the gradient */
+  transform: scaleX(0); /* Start with no underline by scaling it to 0 */
+  transform-origin: center; /* Set the transform origin to the left side */
+  transition: ease transform 0.3s; /* Add a smooth transition effect */
+}
+
+header h1:hover::before {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+  background-position: 0 100%; /* Set the position to the left on hover */
+  transform-origin: center;
+  border-bottom: 2px solid transparent; /* Set the color of the underline on hover */
+}
+
 nav ul {
   list-style-type: none;
 }
@@ -104,7 +134,8 @@ section {
 
 /* Style the text to make it more readable */
 #about p {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 10px; /* Adjust the margin to decrease the gap */
 }
 
 /* Style the text for the quote at the beginning */
@@ -124,7 +155,7 @@ section {
   --primary: hsl(var(--hue), 59%, 47%);
   --trans-dur: 0.5s;
   --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
-  /* font-size: calc(60px + (120 - 60) * (100vw - 320px) / (2560 - 320)); */
+  --light-gradient: linear-gradient(to right, #14148b, #f4f4f4, #ce1a1a80);
 }
 
 input {
@@ -132,14 +163,13 @@ input {
 }
 
 body {
-  background-color: hsl(var(--hue), 10%, 90%);
   color: hsl(var(--hue), 10%, 10%);
   height: 100vh;
   transition: background-color var(--trans-dur), color var(--trans-dur);
 }
 
 body:has(.switch__input:checked) {
-  background-color: hsl(var(--hue), 10%, 20%);
+  background-color: #333;
   color: hsl(var(--hue), 10%, 90%);
 }
 
@@ -256,4 +286,13 @@ body:has(.switch__input:checked) {
 .switch__input:focus-visible {
   box-shadow: 0 0 0 0.0625em hsla(var(--hue), 90%, 50%, 1),
     0 0.125em 0.5em hsla(var(--hue), 10%, 10%, 0.1);
+}
+
+/* Add transition properties for smoother color changes */
+#top-bar {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a {
+  transition: color 0.3s ease;
 }

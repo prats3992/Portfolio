@@ -62,3 +62,29 @@ document.addEventListener("DOMContentLoaded", function () {
   xhr.open("GET", textFileURL, true);
   xhr.send();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const switchInput = document.querySelector(".switch__input");
+  const topBar = document.getElementById("top-bar");
+  const navLinks = document.querySelectorAll("#top-bar nav a");
+
+  switchInput.addEventListener("change", function () {
+    if (switchInput.checked) {
+      topBar.style.backgroundColor = "#f4f4f4";
+      topBar.style.color = "#333";
+
+      // Change the color of the navbar list elements
+      navLinks.forEach(function (link) {
+        link.style.color = "#333";
+      });
+    } else {
+      topBar.style.backgroundColor = "";
+      topBar.style.color = "#fff";
+
+      // Change the color of the navbar list elements back to the default
+      navLinks.forEach(function (link) {
+        link.style.color = "#fff";
+      });
+    }
+  });
+});
