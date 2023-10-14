@@ -28,17 +28,59 @@
         <symbol id="light" viewBox="0 0 24 24">
           <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="12" y1="17" x2="12" y2="20" transform="rotate(0,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(45,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(90,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(135,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(180,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(225,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(270,12,12)" />
-            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(315,12,12)" />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(45,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(90,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(135,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(180,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(225,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(270,12,12)"
+            />
+            <line
+              x1="12"
+              y1="17"
+              x2="12"
+              y2="20"
+              transform="rotate(315,12,12)"
+            />
           </g>
           <circle fill="currentColor" cx="12" cy="12" r="5" />
         </symbol>
-  
+
         <symbol id="dark" viewBox="0 0 24 24">
           <path
             fill="currentColor"
@@ -46,24 +88,29 @@
           />
         </symbol>
       </svg>
-  
+
       <label class="switch">
-        <input class="switch__input" type="checkbox" role="switch" name="dark" />
+        <input
+          class="switch__input"
+          type="checkbox"
+          role="switch"
+          name="dark"
+        />
         <svg class="switch__icon" width="24" height="24" aria-hidden="true">
           <use href="#light" />
         </svg>
-  
+
         <svg class="switch__icon" width="24" height="24" aria-hidden="true">
           <use href="#dark" />
         </svg>
-  
+
         <span class="switch__inner"></span>
-  
+
         <span class="switch__inner-icons">
           <svg class="switch__icon" width="24" height="24" aria-hidden="true">
             <use href="#light" />
           </svg>
-  
+
           <svg class="switch__icon" width="24" height="24" aria-hidden="true">
             <use href="#dark" />
           </svg>
@@ -72,7 +119,8 @@
     </section>
     <section id="about">
       <h2>About Me</h2>
-      <p>Your introduction goes here.</p>
+      <br />
+      <div class="about-content" id="about-text"></div>
     </section>
 
     <section id="portfolio">

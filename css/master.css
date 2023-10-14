@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 
 /* Basic styling */
@@ -57,6 +58,7 @@ section {
 
 .contact-box label {
   font-weight: bold;
+  color: #333; /* Set the text color to a specific color */
 }
 
 .contact-box input,
@@ -77,20 +79,31 @@ section {
   font-weight: bold;
 }
 
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+#about {
+  /* background-color: #f9f9f9; */
+  padding: 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 :root {
-  --hue: 223;
-  --primary: hsl(var(--hue), 90%, 50%);
+  --hue: 45;
+  --primary: hsl(var(--hue), 59%, 47%);
   --trans-dur: 0.5s;
   --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
   /* font-size: calc(60px + (120 - 60) * (100vw - 320px) / (2560 - 320)); */
-} 
+}
 
 input {
   font: 1em/1.5 sans-serif;
@@ -116,10 +129,11 @@ body:has(.switch__input:checked) {
 }
 
 .switch {
-  margin: auto;
-  position: absolute;
-  justify-self: right;
+  margin: auto; /* Remove this line */
+  position: absolute; /* Remove this line */
+  justify-self: right; /* Remove this line */
   user-select: none;
+  right: 20px; /* Add this line to position it to the right */
 }
 
 .switch__icon {
@@ -127,8 +141,8 @@ body:has(.switch__input:checked) {
   pointer-events: none;
   position: absolute;
   inset: 0.375em 0 0 0.375em;
-  width: 0.75em;
-  height: 0.75em;
+  width: 0.75em; /* Increase the width of the icons */
+  height: 0.75em; /* Increase the height of the icons */
   transition: color var(--trans-dur),
     transform var(--trans-dur) var(--trans-timing);
 }
