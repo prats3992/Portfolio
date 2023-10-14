@@ -79,23 +79,45 @@ section {
   font-weight: bold;
 }
 
+/* Center the text within the "About Me" section */
 #about {
-  /* background-color: #f9f9f9; */
-  padding: 20px;
   text-align: center;
 }
 
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.about-content p {
-  font-size: 18px;
-  line-height: 1.6;
+/* Style the "About Me" heading */
+#about h2 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
+
+/* Add a subtle background color to the "About Me" section */
+#about {
+  padding: 20px;
+}
+
+/* Increase the spacing between paragraphs */
+#about p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Style the text to make it more readable */
+#about p {
+  font-family: Arial, sans-serif;
+}
+
+/* Style the text for the quote at the beginning */
+#about p:first-child {
+  font-style: italic;
+}
+
+/* Style links within the "About Me" section
+#about a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+} */
 
 :root {
   --hue: 45;

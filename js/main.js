@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutTextElement = document.getElementById("about-text");
 
   // Define the URL of the text file
-  const textFileURL = "about.txt";
+  const textFileURL = "about_me.txt";
 
   // Create a new XMLHttpRequest object to fetch the text file
   const xhr = new XMLHttpRequest();
