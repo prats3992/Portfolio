@@ -135,20 +135,16 @@ section {
 /* Style the text to make it more readable */
 #about p {
   font-family: "Roboto Slab", sans-serif;
-  margin-bottom: 10px; /* Adjust the margin to decrease the gap */
+  padding: 5px 10px;
+  margin: 0px 100px;
 }
+
 
 /* Style the text for the quote at the beginning */
 #about p:first-child {
   font-style: italic;
 }
 
-/* Style links within the "About Me" section
-#about a {
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
-} */
 
 :root {
   --hue: 45;
