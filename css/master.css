@@ -359,49 +359,22 @@ nav a {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #0C1821;
-}
-.footer .col {
-  width: 190px;
-  height: auto;
-  float: left;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
+  background-color: #030d14;
 }
 .footer .col h1 {
   margin: 0;
   padding: 0;
   font-family: inherit;
-  font-size: 12px;
-  padding: 20px 0px 5px 0px;
+  font-size: 20px;
+  padding: 20px 20px 10px 20px;
   color: rgb(233, 14, 14);
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
 }
-.footer .col ul {
-  /* list-style-type: none; */
-  margin: 10px;
-  padding: 10px;
-  list-style-type: none;
-}
-.contain .col li {
-  color: #999999;
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 20px;
-  cursor: pointer;
-  display: table-cell;
-  margin: 50px;
-}
-.footer .col ul li:hover {
-  color: #ffffff;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
+.footer div.col table td div {
+  color: #f0f0f0; /* You can adjust the color code to the shade of white you prefer */
+  text-align: center;
 }
 .clearfix {
   clear: both;
