@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Sintony", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+header {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  letter-spacing: 4px;
+}
+.section .fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.section .white {
+  color: #fff;
+}
+
+.section:nth-child(1) {
+  background-color: #fff;
+  color: #000;
+  z-index: 1;
+}
+
+.section:nth-child(2) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(40, 90%, 40%);
+  color: #fff;
+  z-index: 2;
+}
+
+.section:nth-child(3) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(240, 90%, 40%);
+  color: #fff;
+  z-index: 3;
+}
+
+.section:nth-child(4) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(80, 90%, 40%);
+  color: #fff;
+  z-index: 4;
+}
+
+.section:nth-child(5) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(280, 90%, 40%);
+  color: #fff;
+  z-index: 5;
+}
+
+.section:nth-child(6) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(120, 90%, 40%);
+  color: #fff;
+  z-index: 6;
+}
+
+.section:nth-child(7) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(320, 90%, 40%);
+  color: #fff;
+  z-index: 7;
+}
+
+.section:nth-child(8) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(160, 90%, 40%);
+  color: #fff;
+  z-index: 8;
+}
+
+.section:nth-child(9) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(0, 90%, 40%);
+  color: #fff;
+  z-index: 9;
+}
+
+.oop {
+  position: relative;
+  z-index: auto;
+  height: 10px;
+  background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+}
+
+/*# sourceMappingURL=about.css.map */
